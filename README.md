@@ -1,2 +1,2 @@
 # Floating-Point-And-Hex-Conversion-Functions
-Converts floating point data types to and from HEX for saving or communications.
+Converts floating point data types to and from HEX for saving or communications. Ideally for use with source and destination system using the same endianness or else permutations of the HEX is required. Saving floating point values as HEX can ensure that values are restored to a floating point type exactly as they were before including +-0 and the various Nan representations. This can be useful for checkpointing and idempotency where alternative ways of saving and reloading floating point values might cause different results to be produced.
